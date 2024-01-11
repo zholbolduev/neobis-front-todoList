@@ -1,0 +1,222 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.name {
+  background-color: #f4f4f4;
+  margin-top: 3px;
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 30px;
+  border: none;
+  outline: none;
+}
+
+h3 {
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+
+span {
+  color: #807c7c;
+  font-size: 19px;
+  margin-top: -9px;
+  font-weight: 700;
+}
+
+#categories {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.addInput {
+  width: 84%;
+  padding: 15px 0 15px 15px;
+  margin: 10px 0 20px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: #302f3d;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.choose {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  width: 530px;
+}
+
+.choose label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border-radius: 9px;
+  height: 90px;
+  padding: 10px;
+  background-color: white;
+}
+
+.choose input[type="radio"] {
+  display: none;
+}
+
+.choose label::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.choose label.blue::before {
+  border-color: blue;
+}
+
+.choose label.red::before {
+  border-color: red;
+}
+
+.choose input.circleBlue:checked + label::before {
+  background-color: blue;
+  border-color: white;
+}
+
+.choose input.circleBlue:checked + label::before::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 2px;
+  background-color: white;
+}
+
+.choose input.circleRed:checked + label::before {
+  background-color: red;
+  border-color: white;
+}
+
+.edit-mode {
+  display: none;
+}
+
+.edit-mode input {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.edit-mode button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.btn {
+  font-size: 18px;
+  width: 87%;
+  padding: 14px 0;
+  background: #3376ea;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.complete-btn.blue {
+  border-color: blue;
+  color: blue;
+}
+
+.complete-btn.red {
+  border-color: red;
+  color: red;
+}
+
+li {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 11px;
+  background: #ffffff;
+  border-radius: 15px;
+  height: 40px;
+}
+
+.deletebtn {
+  background: #e74845;
+  color: #ffffff;
+  padding: 8px 9px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editbtn {
+  background: #cb3188;
+  color: #ffffff;
+  padding: 8px 9px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.completebtn {
+  background: #5abe76;
+  color: #ffffff;
+  padding: 8px 9px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

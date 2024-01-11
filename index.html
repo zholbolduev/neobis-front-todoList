@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div style="display: flex">
+        <h1>What's up,</h1>
+        <input class="name" type="text" placeholder="Name here" />
+      </div>
+      <div id="todo-form">
+        <h3>CREATE A TODO</h3>
+        <span>What's on your todo list?</span>
+        <br />
+        <input
+          class="addInput"
+          type="text"
+          id="taskInput"
+          placeholder="Add a new task"
+        />
+      </div>
+      <div id="categories">
+        <span>Pick a category</span> <br />
+        <div class="choose">
+          <input
+            class="circleBlue"
+            type="radio"
+            name="category"
+            value="business"
+            id="businessRadio"
+          />
+          <label class="blue" for="businessRadio">Business</label>
+          <input
+            class="circleRed"
+            type="radio"
+            name="category"
+            value="personal"
+            id="personalRadio"
+          />
+          <label class="red" for="personalRadio">Personal</label>
+        </div>
+        <br />
+        <button class="btn" onclick="addTask()">Add Todo</button>
+      </div>
+
+      <h3>Todo list</h3>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
