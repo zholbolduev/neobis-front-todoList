@@ -10,7 +10,7 @@ This project is a basic Todo List application developed using HTML, CSS, and Jav
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/todo-list.git
+    git clone [https://github.com/your-username/todo-list.git](https://github.com/zholbolduev/neobis-front-todoList)
     ```
 
 2. Open the `index.html` file in your browser.
